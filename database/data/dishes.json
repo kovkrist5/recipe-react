@@ -1,0 +1,18 @@
+[
+    {
+        "name":"peanut butter sandwitch",
+        "categoryId":"8",
+        "desc":"yummy pbj suitable for every meal",
+        "inst":"take 2 slices of bread; put peanut butter on one; put a jam of your choice on the other; slap em togeter;enjoy!",
+        "prep":5,
+        "cooktime":null
+    },
+    {
+       "name":"garlic bread",
+        "categoryId":"1",
+        "desc":"yummy garlic bread great with pasta",        
+        "inst":"take a baguette and cut into it; slather it with garlic butter; top it with the cheese of your choice; cook it in the oven for 10 minutes",
+        "prep":5,
+        "cooktime":10 
+    }
+]

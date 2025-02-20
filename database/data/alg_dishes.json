@@ -1,0 +1,18 @@
+[
+    {
+        "dishid": 1,
+        "alg":1
+    },
+    {
+        "dishid": 1,
+        "alg":5
+    },
+    {
+        "dishid": 2,
+        "alg":1
+    },
+    {
+        "dishid": 2,
+        "alg":7
+    }
+]

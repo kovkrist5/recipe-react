@@ -1,0 +1,26 @@
+[
+    {
+        "dishid":1,
+        "ing":"bread"
+    },
+    {
+        "dishid":1,
+        "ing":"peanut butter"
+    },
+    {
+        "dishid":1,
+        "ing":"jelly"
+    },
+    {
+        "dishid":2,
+        "ing":"baguette"
+    },
+    {
+        "dishid":2,
+        "ing":"garlic butter"
+    },
+    {
+        "dishid":2,
+        "ing":"cheese"
+    }
+]

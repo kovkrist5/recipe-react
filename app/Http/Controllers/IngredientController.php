@@ -2,19 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Dish;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
-use Inertia\Inertia;
 
-class DishController extends Controller
+class IngredientController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return Dish::all();
+        //
     }
 
     /**
@@ -22,7 +19,7 @@ class DishController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Create');
+        //
     }
 
     /**
@@ -31,27 +28,9 @@ class DishController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name'=>'required',
-            "categoryId"=>"required",
-            
-
-            "desc"=>"required|array",
-
-            "inst"=>"required|",
-            "prep"=>"required",
-            "cooktime"=> "required|nullable"
+            "dishid"=>"required",
+            "ing"=>"required"
         ]);
-        /*$dish = new Dish();
-        $dish->name = $request->name;
-        $dish->categoryId = $request->categoryId;
-        $dish->desc=$request->desc;
-        $dish->inst=$request->inst;
-        $dish->prep=$request->prep;
-        $dish->cooktime=$request->cooktime;
-        $dish->save();*/
-        Dish::create($request->all());
-
-        return redirect()->route('dashboard');
     }
 
     /**

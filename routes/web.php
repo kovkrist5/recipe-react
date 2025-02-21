@@ -25,9 +25,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-Route::get('/dish-create', function () {
-    return Inertia::render('Create');
-})->middleware(['auth']);
+Route::get('/front', function(){
+    return Inertia::render('Front');
+});
+//Route::post('/dish-create',[DishController::class, 'store'])->middleware(['auth']);
 
 require __DIR__.'/auth.php';

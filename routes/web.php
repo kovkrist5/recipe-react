@@ -26,4 +26,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/dish-create', function () {
+    return Inertia::render('Create');
+})->middleware(['auth']);
+
 require __DIR__.'/auth.php';
